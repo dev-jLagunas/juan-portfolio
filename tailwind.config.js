@@ -4,6 +4,9 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      screens: {
+        xs: "425px",
+      },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],
         montserrat: ["Montserrat Alternates", "sans-serif"],
