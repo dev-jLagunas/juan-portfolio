@@ -1,21 +1,21 @@
 <script setup>
 import skaterSketch from "@/assets/images/skatersketch.png";
 import ButtonsWrapper from "@/components/ButtonsWrapper.vue";
+import TitleHeader from "@/components/TitleHeader.vue";
+
+// Props to pass down
+const titleOne = "Juan";
+const titleTwo = "Lagunas";
+const comment = "Frontend Developer";
 </script>
 
 <template>
   <section class="relative h-screen flex flex-col justify-center pt-10">
-    <h1
-      class="text-5xl tracking-tighter font-extrabold font-rubik text-center text-dark-color dark:text-light-color sm:text-6xl"
-    >
-      &lt; JUAN <span class="block sm:inline sm:pl-3">LAGUNAS /&gt;</span>
-    </h1>
-
-    <h2
-      class="font-rubik font-extrabold tracking-tighter text-center sm:my-4 sm:text-2xl lg:text-3xl"
-    >
-      &lt;!-- Frontend Developer --&gt;
-    </h2>
+    <title-header
+      :titleOne="titleOne"
+      :titleTwo="titleTwo"
+      :comment="comment"
+    />
     <figure class="custom-width lg:mx-auto lg:flex relative lg:items-center">
       <img
         :src="skaterSketch"

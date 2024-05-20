@@ -21,7 +21,7 @@ const props = defineProps(["isDarkMode"]);
       {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
     </button>
     <ul
-      class="flex justify-center gap-1 items-center w-full text-sm -mt-2 cursor-pointer pb-1"
+      class="flex justify-center sm:gap-8 lg:gap-16 gap-1 items-center w-full text-sm -mt-2 cursor-pointer pb-1"
     >
       <router-link to="/" active-class="active" class="px-1">HOME</router-link>
       <router-link to="/about" active-class="active" class="px-1"
