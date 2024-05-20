@@ -11,7 +11,7 @@ const props = defineProps(["isDarkMode"]);
 
 <template>
   <nav
-    class="z-10 h-max font-rubik bg-nav-light text-light-color dark:text-dark-color w-90vw mx-auto rounded-md fixed left-1/2 transform -translate-x-1/2"
+    class="z-20 h-max font-rubik bg-nav-light text-light-color dark:text-dark-color w-90vw mx-auto rounded-md fixed left-1/2 transform -translate-x-1/2"
   >
     <img :src="juanLogo" alt="personal logo" class="h-16 mx-auto" />
     <button
@@ -21,10 +21,11 @@ const props = defineProps(["isDarkMode"]);
       {{ isDarkMode ? "Light Mode" : "Dark Mode" }}
     </button>
     <ul
-      class="flex justify-center gap-4 items-center w-full text-sm -mt-2 cursor-pointer pb-1"
+      class="flex justify-center gap-1 items-center w-full text-sm -mt-2 cursor-pointer pb-1"
     >
-      <router-link to="/" active-class="active" class="px-1"
-        >ABOUT ME</router-link
+      <router-link to="/" active-class="active" class="px-1">HOME</router-link>
+      <router-link to="/about" active-class="active" class="px-1"
+        >ABOUT</router-link
       >
       <router-link to="/works" active-class="active" class="px-1"
         >WORKS</router-link
@@ -35,7 +36,7 @@ const props = defineProps(["isDarkMode"]);
     </ul>
     <button
       @click="languageBoxOpen = !languageBoxOpen"
-      class="absolute top-5 -right-6 bg-light-color text-dark-color px-7 py-1 rotate-45 dark:bg-dark-color dark:text-light-color text-xs"
+      class="absolute top-4 -right-6 bg-light-color text-dark-color px-7 py-1 rotate-45 dark:bg-dark-color dark:text-light-color text-xs"
     >
       Language
     </button>
