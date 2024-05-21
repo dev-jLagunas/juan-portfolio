@@ -1,7 +1,7 @@
 <script setup>
 import skaterSketch from "@/assets/images/skatersketch.png";
-import ButtonsWrapper from "@/components/ButtonsWrapper.vue";
 import TitleHeader from "@/components/TitleHeader.vue";
+import ButtonWrapper from "@/components/ButtonsWrapper.vue";
 
 // Props to pass down
 const titleOne = "Juan";
@@ -10,7 +10,7 @@ const comment = "Frontend Developer";
 </script>
 
 <template>
-  <section class="relative h-screen flex flex-col justify-center pt-10">
+  <section class="relative h-screen grid place-content-center pt-8">
     <title-header
       :titleOne="titleOne"
       :titleTwo="titleTwo"
@@ -63,7 +63,7 @@ const comment = "Frontend Developer";
         time
       </p>
     </div>
-    <buttons-wrapper />
+    <button-wrapper />
   </section>
 </template>
 

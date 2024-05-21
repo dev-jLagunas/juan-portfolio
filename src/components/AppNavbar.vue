@@ -3,7 +3,7 @@ import juanLogo from "@/assets/logo/juanlogo.png";
 import { ref } from "vue";
 
 // State
-const languageBoxOpen = ref(true);
+const languageBoxOpen = ref(false);
 
 // Props
 const props = defineProps(["isDarkMode"]);
