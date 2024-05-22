@@ -5,7 +5,7 @@ import frontendMentor from "@/assets/icons/frontend-mentor-icon.svg";
 
 <template>
   <div
-    class="text-sm flex divide-y rounded text-dark-color dark:text-light-color fixed flex-col bottom-80 left-5 xs:top-72 xs:text-base xs:left-7 lg:left-11 lg:text-2xl xl:left-20"
+    class="text-sm z-50 flex divide-y rounded text-dark-color dark:text-light-color fixed flex-col bottom-80 left-5 xs:top-72 xs:text-base xs:left-7 lg:left-11 lg:text-2xl xl:left-20"
   >
     <button type="button" class="py-1">
       <i class="fa-brands fa-github"></i>

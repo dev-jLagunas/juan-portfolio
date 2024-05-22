@@ -10,7 +10,7 @@ const comment = "Frontend Developer";
 </script>
 
 <template>
-  <section class="relative h-screen grid place-content-center pt-8">
+  <section class="relative h-max lg:h-screen grid place-content-center pt-24">
     <title-header
       :titleOne="titleOne"
       :titleTwo="titleTwo"

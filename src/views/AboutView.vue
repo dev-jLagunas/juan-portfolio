@@ -13,7 +13,7 @@ const comment = "Learn More About Me";
 </script>
 
 <template>
-  <section class="pt-32 pb-10 lg:h-screen">
+  <section class="pt-32 pb-10 md:h-screen">
     <title-header
       :titleOne="titleOne"
       :titleTwo="titleTwo"
