@@ -7,7 +7,7 @@ const titleTwo = "Works";
 const comment = "See My Highlighted Projects";
 </script>
 <template>
-  <section class="pt-32 h-max xl:h-screen">
+  <section class="pt-32 h-max">
     <title-header
       :titleOne="titleOne"
       :titleTwo="titleTwo"
