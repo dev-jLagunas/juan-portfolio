@@ -21,10 +21,7 @@ const comment = "Send Me A Message";
     />
 
     <div class="sm:grid md:grid-cols-2 custom-width mx-auto md:gap-4">
-      <figure
-        class="relative z-0 w-full xs:w-96 md:w-full mx-auto"
-        :style="{ backgroundImage: `url(${waveSVG})` }"
-      >
+      <figure class="relative z-0 w-full xs:w-96 md:w-full mx-auto bg-image">
         <img
           :src="selfSketch"
           alt="sketch of myself"
@@ -40,6 +37,9 @@ const comment = "Send Me A Message";
 </template>
 
 <style scoped>
+.bg-image {
+  background-image: url("../assets/svg/bg-wave.svg");
+}
 @media (min-width: 1024px) {
   .custom-width {
     width: 900px;
