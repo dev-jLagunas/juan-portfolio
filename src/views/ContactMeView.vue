@@ -3,7 +3,7 @@ import TitleHeader from "@/components/TitleHeader.vue";
 import ContactForm from "@/components/ContactForm.vue";
 import selfSketch from "@/assets/images/self-sketch.png";
 import ButtonsWrapper from "@/components/ButtonsWrapper.vue";
-import waveSVG from "@/assets/svg/bg-wave.svg";
+
 import LinksDecorative from "@/components/LinksDecorative.vue";
 
 // Props to pass down

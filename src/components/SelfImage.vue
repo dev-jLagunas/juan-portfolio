@@ -1,16 +1,9 @@
 <script setup>
 import selfPhoto from "@/assets/images/self-photo.png";
-import waveSVG from "@/assets/svg/bg-wave.svg";
-
-// Variables
-const wave = waveSVG;
 </script>
 
 <template>
-  <figure
-    class="h-56 relative custom-bg"
-    :style="{ backgroundImage: `url(${wave})` }"
-  >
+  <figure class="h-56 relative bg-image">
     <img
       :src="selfPhoto"
       alt="self photo"
@@ -29,4 +22,8 @@ const wave = waveSVG;
   </figure>
 </template>
 
-<style scoped></style>
+<style scoped>
+.bg-image {
+  background-image: url("../assets/svg/bg-wave.svg");
+}
+</style>
