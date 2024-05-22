@@ -10,9 +10,6 @@ import LinksDecorative from "@/components/LinksDecorative.vue";
 const titleOne = "Contact";
 const titleTwo = "Me";
 const comment = "Send Me A Message";
-
-// Variables
-const wave = waveSVG;
 </script>
 
 <template>
@@ -26,7 +23,7 @@ const wave = waveSVG;
     <div class="sm:grid md:grid-cols-2 custom-width mx-auto md:gap-4">
       <figure
         class="relative z-0 w-full xs:w-96 md:w-full mx-auto"
-        :style="{ backgroundImage: `url(${wave})` }"
+        :style="{ backgroundImage: `url(${waveSVG})` }"
       >
         <img
           :src="selfSketch"
