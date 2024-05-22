@@ -9,7 +9,7 @@ import projectsData from "@/data/projects.js";
     class="w-56 mx-auto xs:w-72 md:w-64 mt-10 h-max custom-shadow px-2 overflow-hidden"
   >
     <h2
-      class="mb-2 px-3 py-1 mt-4 rounded-tr-full custom-radius text-light-color w-40 slide-in-left"
+      class="mb-2 px-3 py-1 mt-4 text-sm rounded-tr-full custom-radius text-light-color w-40 slide-in-left"
       :class="[project.bgColor]"
     >
       // {{ project.framework }}
