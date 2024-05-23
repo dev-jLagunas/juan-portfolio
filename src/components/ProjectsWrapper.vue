@@ -6,11 +6,10 @@ import projectsData from "@/data/projects.js";
   <article
     v-for="project in projectsData"
     :key="project.id"
-    class="w-56 mx-auto xs:w-72 md:w-64 mt-10 h-max custom-shadow px-2 overflow-hidden"
+    class="w-56 mx-auto xs:w-72 md:w-64 mt-10 h-max custom-shadow px-2 overflow-hidden font-rubik"
   >
     <h2
-      class="mb-2 px-3 py-1 mt-4 text-sm rounded-tr-full custom-radius text-light-color w-40 slide-in-left"
-      :class="[project.bgColor]"
+      class="mb-2 px-3 pt-1 mt-4 text-xs rounded-tr-full custom-radius text-dark-color w-40 slide-in-left border-2 border-nav-light dark:text-light-color"
     >
       // {{ project.framework }}
     </h2>
@@ -35,8 +34,7 @@ import projectsData from "@/data/projects.js";
         // {{ project.title }}
       </h3>
       <p
-        class="text-xs px-4 py-2 text-light-color w-max rounded-tr-full"
-        :class="[project.bgColor]"
+        class="text-xs px-5 py-4 w-max rounded-tr-full border-2 border-double text-dark-color dark:text-light-color border-nav-light"
       >
         {{ project.description
         }}<i class="pl-2" :class="[project.iconClass]"></i>
