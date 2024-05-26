@@ -8,6 +8,13 @@ import squareDesktop from "@/assets/screenshots/square-desktop-screenshot.png";
 import squareMobile from "@/assets/screenshots/square-mobile-screenshot.png";
 import portfoDesktop from "@/assets/screenshots/portfo-desktop-screenshot.png";
 import portfoMobile from "@/assets/screenshots/portfo-mobile-screenshot.png";
+import vueLogo from "@/assets/company-logos/vue-svgrepo-com.svg";
+import angularLogo from "@/assets/company-logos/angular-svgrepo-com.svg";
+import tailwindLogo from "@/assets/company-logos/tailwind-svgrepo-com.svg";
+import materialLogo from "@/assets/company-logos/material.svg";
+import typescriptLogo from "@/assets/company-logos/typescript-official-svgrepo-com.svg";
+import javascriptLogo from "@/assets/company-logos/javascript-svgrepo-com.svg";
+import threeJsLogo from "@/assets/company-logos/Threejs-logo.png";
 
 export default [
   {
@@ -18,7 +25,7 @@ export default [
     description: "Local cafe in Ishikawa, Japan",
     iconClass: "fa-solid fa-mug-saucer",
     bgColor: "bg-orange-500",
-    framework: "ANGULAR",
+    technologies: [angularLogo, tailwindLogo, typescriptLogo],
   },
   {
     id: 2,
@@ -28,7 +35,7 @@ export default [
     description: "My journey as a self-taught dev",
     iconClass: "fa-solid fa-book-open",
     bgColor: "bg-emerald-800",
-    framework: "ANGULAR",
+    technologies: [angularLogo, materialLogo, typescriptLogo],
   },
   {
     id: 3,
@@ -38,7 +45,7 @@ export default [
     description: "Square Goods, e-commerce site",
     iconClass: "fa-solid fa-credit-card",
     bgColor: "bg-yellow-500",
-    framework: "ANGULAR",
+    technologies: [angularLogo, typescriptLogo],
   },
   {
     id: 3,
@@ -48,7 +55,7 @@ export default [
     description: "Interactive space themed site",
     iconClass: "fa-solid fa-rocket",
     bgColor: "bg-red-500",
-    framework: "VUE",
+    technologies: [vueLogo, javascriptLogo, threeJsLogo],
   },
   {
     id: 3,
@@ -58,6 +65,6 @@ export default [
     description: "My personal portfolio website",
     iconClass: "fa-solid fa-user-astronaut",
     bgColor: "bg-teal-600",
-    framework: "VUE",
+    technologies: [vueLogo, tailwindLogo, javascriptLogo],
   },
 ];

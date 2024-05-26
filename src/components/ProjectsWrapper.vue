@@ -6,13 +6,23 @@ import projectsData from "@/data/projects.js";
   <article
     v-for="project in projectsData"
     :key="project.id"
-    class="w-56 mx-auto xs:w-72 md:w-64 mt-10 h-max custom-shadow px-2 overflow-hidden font-rubik"
+    class="w-64 mx-auto xs:w-72 md:w-64 mt-10 h-max custom-shadow overflow-x-hidden font-rubik relative rounded-md"
   >
-    <h2
-      class="mb-2 px-3 pt-1 mt-4 text-xs rounded-tr-full custom-radius text-dark-color w-40 slide-in-left border-2 border-nav-light dark:text-light-color"
+    <p
+      class="bg-nav-light text-light-color text-center text-sm py-3 font-extralight dark:text-dark-color"
     >
-      // {{ project.framework }}
-    </h2>
+      {{ project.description
+      }}<i class="pl-2 text-xs" :class="[project.iconClass]"></i>
+    </p>
+    <div class="flex justify-evenly py-3">
+      <img
+        v-for="(technology, techIndex) in project.technologies"
+        :key="techIndex"
+        :src="technology"
+        alt="Technology logo"
+        class="h-6 scale-in-center"
+      />
+    </div>
     <figure class="relative w-full h-56">
       <img
         :src="project.imageDesktop"
@@ -23,29 +33,42 @@ import projectsData from "@/data/projects.js";
       <img
         :src="project.imageMobile"
         alt="mobile screenshot"
-        class="absolute rotate-12 h-40 -bottom-10 -right-2 custom-hover hover:rotate-0 duration-500 shadow-image"
+        class="absolute rotate-12 h-40 -bottom-10 -right-2 custom-hover hover:rotate-0 duration-500 shadow-image z-10"
       />
     </figure>
     <div class="font-rubik pb-3">
       <h3
-        class="w-max mb-2 px-3 py-1 mt-4 rounded-ee-full text-light-color"
+        class="w-max mb-2 px-3 py-1 mt-4 rounded-ee-full text-light-color slide-in-left"
         :class="[project.bgColor]"
       >
         // {{ project.title }}
       </h3>
-      <p
-        class="text-xs px-5 py-4 w-max rounded-tr-full border-2 border-double text-dark-color dark:text-light-color border-nav-light"
-      >
-        {{ project.description
-        }}<i class="pl-2" :class="[project.iconClass]"></i>
-      </p>
+
+      <div class="flex justify-start pl-4 space-x-4">
+        <button class="">
+          <i
+            class="fa-brands fa-github border-2 p-1 rounded-md border-nav-light text-dark-color dark:text-light-color text-sm"
+          ></i>
+        </button>
+        <button class="">
+          <i
+            class="fa-solid fa-display border-2 p-1 rounded-md border-nav-light text-dark-color dark:text-light-color text-sm"
+          ></i>
+        </button>
+      </div>
     </div>
+    <button
+      class="text-sm py-1 w-full bg-nav-light text-light-color dark:text-dark-color"
+    >
+      SEE MORE
+    </button>
   </article>
 </template>
 
 <style scoped>
 .custom-shadow {
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .shadow-image {
@@ -59,6 +82,37 @@ import projectsData from "@/data/projects.js";
 .slide-in-left {
   -webkit-animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: slide-in-left 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.scale-in-center {
+  -webkit-animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-center 2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 @-webkit-keyframes slide-in-left {

@@ -1,19 +1,17 @@
 <script setup>
-import cafeVideo from "@/assets/videos/cafe-video.webm";
+import DetailsHeader from "@/components/ProjectDetailsHeader.vue";
+import DetailsTech from "@/components/ProjectDetailsTechnologies.vue";
+import DetailsFeatures from "@/components/ProjectDetailsFeatures.vue";
 </script>
 
 <template>
   <section
-    class="h-screen flex flex-col items-center justify-center w-90vw mx-auto custom-bg"
+    class="h-max flex flex-col items-start justify-center w-90vw mx-auto custom-bg pt-32 lg:pt-0 lg:h-screen"
   >
-    <header class="flex flex-col justify-start items-start font-rubik">
-      <div>
-        <video :src="cafeVideo" controls class="rounded-md"></video>
-      </div>
-      <h2 class="font-bold text-4xl">CAFE TRIANGLE</h2>
-      <button>Source Code</button>
-      <button>Live Site</button>
-    </header>
+    <DetailsHeader />
+
+    <DetailsTech />
+    <DetailsFeatures />
   </section>
 </template>
 
