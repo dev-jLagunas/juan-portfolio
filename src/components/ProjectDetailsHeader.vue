@@ -5,14 +5,14 @@ import cafeVideo from "@/assets/videos/cafe-video.webm";
 <template>
   <header class="font-rubik w-90vw">
     <p
-      class="border-4 border-double p-2 border-nav-light mb-4 rounded-md text-xs xs:text-sm md:text-base text-center md:w-2/3 lg:w-3/4 md:mx-auto text-dark-color dark:text-light-color font-montserrat"
+      class="border-4 border-double p-2 border-nav-light mb-4 rounded-md text-xs xs:text-sm md:text-base text-center md:w-2/3 lg:w-3/4 xl:w-1/2 md:mx-auto text-dark-color dark:text-light-color font-montserrat"
     >
       A site for the local coffee shop I used to own with my wife in Ishikawa,
       Japan. When I first started my self-taught journey I told my self that my
       first goal would be creating our shops site! Here is the final product!
     </p>
     <div
-      class="mx-auto md:flex md:flex-col md:justify-center md:items-center lg:grid lg:grid-cols-2 lg:w-3/4 lg:space-x-16"
+      class="mx-auto md:flex md:flex-col md:justify-center md:items-center lg:grid lg:grid-cols-2 lg:w-3/4 lg:space-x-16 2xl:w-1/2"
     >
       <video
         :src="cafeVideo"
@@ -21,10 +21,10 @@ import cafeVideo from "@/assets/videos/cafe-video.webm";
       ></video>
 
       <div
-        class="flex flex-col justify-center space-y-2 items-center w-full text-light-color dark:text-dark-color"
+        class="flex flex-col justify-center space-y-2 items-center w-full text-light-color dark:text-dark-color 2xl:pl-4"
       >
         <h2
-          class="font-extrabold text-4xl my-2 mx-auto text-center tracking-wider md:text-6xl text-dark-color dark:text-light-color lg:-ml-20"
+          class="font-extrabold text-4xl my-2 mx-auto text-center tracking-wider md:text-6xl 2xl:text-8xl text-dark-color dark:text-light-color lg:-ml-20"
         >
           CAFE TRIANGLE
         </h2>

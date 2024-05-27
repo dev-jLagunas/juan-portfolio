@@ -2,16 +2,18 @@
 import DetailsHeader from "@/components/ProjectDetailsHeader.vue";
 import DetailsTech from "@/components/ProjectDetailsTechnologies.vue";
 import DetailsFeatures from "@/components/ProjectDetailsFeatures.vue";
+import DetailsImages from "@/components/ProjectDetailsImages.vue";
 </script>
 
 <template>
   <section
-    class="h-max flex flex-col items-start justify-center w-90vw mx-auto custom-bg pt-32 lg:pt-0 lg:h-screen"
+    class="h-max md:h-max flex flex-col items-start justify-center w-90vw mx-auto custom-bg pt-32 lg:pt-24"
   >
     <DetailsHeader />
 
     <DetailsTech />
     <DetailsFeatures />
+    <DetailsImages />
   </section>
 </template>
 
